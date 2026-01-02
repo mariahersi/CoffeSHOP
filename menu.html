@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MogCoffee Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2 class="logo">☕ MogCoffee Co.</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+   
+
+    <!-- TITLE -->
+    <section class="hero1">
+        <div class=" titl">
+            <h1>Discover Our Curated Coffee Menu
+                <br>
+                Crafting the Perfect Brew, Every Time
+            </h1>
+        </div>
+        <br>
+        <div class="para">
+            <p>Explore a world of exceptional flavors, hand-selected blends, and artisanal coffee crafted just for you.
+            </p>
+        </div>
+
+
+    </section>
+
+<section class="container menu_container">
+
+
+
+    <!-- SEARCH -->
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search here">
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+<button onclick="filter_data('coffe')">Coffee</button>
+<button onclick="filter_data('tea')">Tea</button>
+<button onclick="filter_data('shake')">Shake</button>
+<button onclick="filter_data('desserts')">Desserts</button>
+
+    </div>
+
+    <!-- MENU -->
+    <section class="menu">
+
+
+        <!-- <div class="menu-card" data-category="coffee">
+            <img src="assets/espresso.webp" alt="Espresso">
+            <h3>Espresso</h3>
+            <p class="desc">A rich concentrated shot of coffee with bold flavor.</p>
+            <p class="price">$4.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>  -->
+
+        <!-- <div class="menu-card" data-category="coffee">
+            <img src="assets/cappuccino.webp" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p class="desc">Espresso with steamed milk and frothy foam.</p>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> -->
+
+        <!-- <div class="menu-card" data-category="coffee">
+            <img src="assets/icedlatte.webp" alt="Iced Latte">
+            <h3>Iced Latte</h3>
+            <p class="desc">Smooth espresso mixed with chilled milk.</p>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> -->
+        <!-- 
+        <div class="menu-card" data-category="coffee">
+            <img src="assets/americano.webp" alt="Americano">
+            <h3>Americano</h3>
+            <p class="desc">Rich espresso diluted with hot water.</p>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> -->
+
+        <!-- <div class="menu-card" data-category="coffee">
+            <img src="assets/macchiato.webp" alt="Macchiato">
+            <h3>Macchiato</h3>
+            <p class="desc">Espresso topped with a dollop of milk foam.</p>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> -->
+
+        <!-- <div class="menu-card" data-category="coffee">
+            <img src="assets/flat-white (1).webp" alt="Flat White">
+            <h3>Flat White</h3>
+            <p class="desc">Velvety milk blended with rich espresso.</p>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> -->
+
+        <!-- <div class="menu-card" data-category="coffee">
+            <img src="assets/Double Espresso.webp" alt="Double Espresso">
+            <h3>Double Espresso</h3>
+            <p class="desc">Twice the espresso, twice the strength.</p>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> -->
+
+    </section>
+
+    <!-- CART SECTION -->
+    <!-- <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <div class="cart-actions">
+            <a href="cart.html" class="btn">View Full Cart</a>
+            <button class="btn checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </div>
+    </section> -->
+    </section>
+   
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-box">
+                <h3>☕ Mogadishu Coffee</h3>
+                <p>
+                    Discover the finest flavors from Somalia,
+                    where each coffee bean is handpicked for
+                    exceptional quality.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-box">
+                <h4>Stay Connected</h4>
+                <div class="social-icons">
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                </div>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="footer-box">
+                <h4>Join Our Coffee Club</h4>
+                <input type="email" placeholder="Your email address">
+                <button>Subscribe</button>
+                <small>By subscribing, you agree to our Privacy Policy</small>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 Mogadishu Coffee. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        const menus = [
+            {
+                title: "Lemon Tea",
+                decription: "A zesty and invigorating lemon tea.",
+                image: "assets/lemon1.webp",
+                price: 12,
+                type: "tea"
+            },
+            {
+                title: "Jasmine Tea",
+                decription: "Fragrant green tea with jasmine aroma.",
+                image: "assets/jasmin.webp",
+                price: 4,
+                type: "tea"
+            },
+            {
+                title: "Apple Tea",
+                decription: "Refreshing apple flavored tea.",
+                image: "assets/Apple.webp",
+                price: 4,
+                type: "tea"
+            },
+             {
+                title: "Green Tea",
+                decription: "A light and refreshing tea with a slightly grassy flavor profile. Packed with antioxidants, it's a healthy choice for tea lovers seeking a natural energy boost.",
+                image: "assets/Apple.webp",
+                price: 4,
+                type: "tea"
+            },
+              {
+                title: "Mint Tea",
+                decription: "A cool and soothing tea with a fresh, minty aroma. Known for its calming properties, it's a great choice for unwinding after a long day.",
+                image: "assets/Apple.webp",
+                price: 4,
+                type: "tea"
+            },
+             {
+                title: "Jasmine Tea",
+                decription: "Fragrant green tea with jasmine aroma.",
+                image: "assets/jasmin.webp",
+                price: 4,
+                type: "tea"
+            },
+            {
+                title: "Espresso",
+                decription: "Strong and bold espresso coffee.",
+                image: "assets/espresso.webp",
+                price: 12,
+                type: "coffe"
+            },
+            {
+                title: "Cappuccino",
+                decription: "Espresso with steamed milk.",
+                image: "assets/Cappuccino.webp",
+                price: 12,
+                type: "coffe"
+            },
+            {
+                title: "Americano",
+                decription: "Smooth diluted espresso.",
+                image: "assets/Americano.webp",
+                price: 12,
+                type: "coffe"
+            },
+             {
+                title: "Iced Latte",
+                decription: "A refreshing combination of smooth espresso, creamy milk, and ice. This drink is perfect for hot days or when you crave a chilled coffee treat with a balanced flavor profile.",
+                image: "assets/icedlatte.webp",
+                price: 12,
+                type: "coffe"
+            },
+            {
+                title: "Macchiato",
+                decription: " A beautifully layered drink featuring a bold espresso base topped with a delicate dollop of steamed milk. Perfect for those who enjoy a hint of creaminess in their coffee.",
+                image: "assets/Macchiato.webp",
+                price: 5,
+                type: "coffe"
+            },
+             {
+                title: "",
+                decription: " A beautifully layered drink featuring a bold espresso base topped with a delicate dollop of steamed milk. Perfect for those who enjoy a hint of creaminess in their coffee.",
+                image: "assets/flat-white (1).webp",
+                price: 5,
+                type: "coffe"
+            },
+            
+            {
+                title: "Milkshake",
+                decription: "Creamy milkshake drink.",
+                image: "assets/Milkshake.webp",
+                price: 10,
+                type: "shake"
+            },
+            {
+                title: "Smoothie",
+                decription: "Healthy fruit smoothie.",
+                image: "assets/Smoothie.webp",
+                price: 10,
+                type: "shake"
+            },
+             {
+                title: "Lemonade",
+                decription: "A refreshing drink combining the tartness of fresh lemons with just the right amount of sweetness. Perfect for staying cool on a hot day.",
+                image: "assets/milk.webp",
+                price: 10,
+                type: "shake"
+            },
+               {
+                title: "Smoothie",
+                decription: "Healthy fruit smoothie.",
+                image: "assets/Smoothie.webp",
+                price: 10,
+                type: "shake"
+            },
+            {
+                title: "Chocolate Waffle",
+                decription: "Waffle with chocolate & ice cream.",
+                image: "assets/ChocolateIceCream Waffle.webp",
+                price: 5,
+                type: "desserts"
+            },
+            {
+                title: "Lemonade",
+                decription: "A refreshing drink combining the tartness of fresh lemons with just the right amount of sweetness. Perfect for staying cool on a hot day.",
+                image: "assets/milk.webp",
+                price: 10,
+                type: "shake"
+            },
+            {
+                title: "Lemonade",
+                decription: "A refreshing drink combining the tartness of fresh lemons with just the right amount of sweetness. Perfect for staying cool on a hot day.",
+                image: "assets/milk.webp",
+                price: 10,
+                type: "shake"
+            },
+              {
+                title: "Raspberry Tiramisu",
+                decription: "Decadent layers of creamy mascarpone cheese and coffee-soaked biscuits, topped with fresh raspberries and a dusting of cocoa powder.",
+                image: "assets/RaspberryTiramisu.webp",
+                price: 5,
+                type: "desserts"
+            }
+            , {
+                title: "Berry Lemon Cheesecake",
+                decription: "Waffle with chocolate & ice cream.",
+                image: "assets/Berry Lemon Cheesecake.webp",
+                price: 5,
+                type: "desserts"
+            },
+              {
+                title: "Chocolate Waffle",
+                decription: "Waffle with chocolat RaspberryTiramisu.webp & ice cream.",
+                image: "assets/ChocolateIceCream Waffle.webp",
+                price: 5,
+                type: "desserts"
+            },
+              {
+                title: "Chocolate Waffle",
+                decription: "Waffle with chocolate & ice cream.",
+                image: "assets/HotChocolate.webp",
+                price: 5,
+                type: "desserts"
+            },
+              {
+                title: "Chocolate Waffle",
+                decription: "Waffle with chocolate & ice cream.",
+                image: "assets/ChocolateIceCream Waffle.webp",
+                price: 5,
+                type: "desserts"
+            }, 
+              
+        ];
+
+        const menuContainer = document.querySelector(".menu");
+        const searchInput = document.getElementById("search");
+
+        // Render Menu
+        function renderMenu(data) {
+            menuContainer.innerHTML = "";
+
+            data.forEach(item => {
+                menuContainer.innerHTML += `
+            <div class="menu-card" data-title="${item.title}" data-price="${item.price}" data-image="${item.image}">
+              <img src="${item.image}" alt="${item.title}">
+              <h3>${item.title}</h3>
+              <p class="desc">${item.decription}</p>
+              <p class="price">$${item.price}</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          `;
+            });
+        }
+
+        // Filter by button
+        function filter_data(type) {
+            const filtered = menus.filter(item => item.type === type);
+            renderMenu(filtered);
+        }
+
+        // Search
+        searchInput.addEventListener("keyup", () => {
+            const value = searchInput.value.toLowerCase();
+
+            const filtered = menus.filter(item =>
+                item.title.toLowerCase().includes(value)
+            );
+
+            renderMenu(filtered);
+        });
+
+        // Default Coffee
+        window.onload = () => {
+            filter_data("coffe");
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

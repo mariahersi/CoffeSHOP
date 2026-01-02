@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MogCoffee Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2 class="logo">☕ MogCoffee Co.</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </nav>
+    </header>
+<section class="container">
+    <section class="cont_cart">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <div class="cart-actions">
+            <a href="menu.html" class="btn">Continue Shopping</a>
+            <button class="btn checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </div>
+    </section>
+    </section>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-box">
+            <h3>☕ Mogadishu Coffee</h3>
+            <p>
+                Discover the finest flavors from Somalia,
+                where each coffee bean is handpicked for
+                exceptional quality.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-box">
+            <h4>Stay Connected</h4>
+            <div class="social-icons">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+            </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-box">
+            <h4>Join Our Coffee Club</h4>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+            <small>By subscribing, you agree to our Privacy Policy</small>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2025 Mogadishu Coffee. All rights reserved.
+    </p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
