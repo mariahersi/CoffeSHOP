@@ -1,10 +1,10 @@
 const buttons = document.querySelectorAll("button");
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    alert("Item added to cart ");
-  });
-});
+// buttons.forEach(btn => {
+//   btn.addEventListener("click", () => {
+//     alert("Item added to cart ");
+//   });
+// });
 
 // Cart functions
 function getCart() {
@@ -60,6 +60,7 @@ function updateCartCount() {
   document.querySelectorAll('.cart-count').forEach(span => {
     span.textContent = count;
   });
+ 
 }
 
 function renderCart() {
