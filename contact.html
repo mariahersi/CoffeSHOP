@@ -10,6 +10,7 @@
 
 <body>
 
+  <!-- NAVBAR -->
   <header class="navbar">
     <h2 class="logo">☕ MogCoffee Co.</h2>
     <nav>
@@ -21,36 +22,36 @@
     </nav>
   </header>
 
+  <!-- PAGE -->
   <main class="page">
     <h1 class="page-title">Get in Touch</h1>
 
     <div class="contact-wrapper">
 
-      <!-- LEFT -->
+      <!-- LEFT : FORM -->
       <section class="card">
         <h2>Send us a message</h2>
 
-      <form id="contactForm">
-        <label>Name</label>
-        <input type="text" placeholder="Enter your name">
-      
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email">
-      
-        <label>Message</label>
-        <textarea placeholder="Type your message here"></textarea>
-      
-        <button type="submit">Send Message</button>
-      </form>
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" required>
 
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required>
+
+          <label>Message</label>
+          <textarea placeholder="Type your message here" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </section>
 
-      <!-- RIGHT -->
+      <!-- RIGHT : VISIT US -->
       <section class="card">
         <h2>Visit Us</h2>
 
         <div class="info-item">
-          <span class="icon">📍</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
           <div>
             <strong>Address</strong>
             <p>123 Coffee Street, Mogadishu, Somalia</p>
@@ -58,7 +59,7 @@
         </div>
 
         <div class="info-item">
-          <span class="icon">📞</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" class="icon">
           <div>
             <strong>Phone</strong>
             <p>+252 61 234 5678</p>
@@ -66,7 +67,7 @@
         </div>
 
         <div class="info-item">
-          <span class="icon">✉</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
           <div>
             <strong>Email</strong>
             <p>info@mogcoffee.com</p>
@@ -74,7 +75,7 @@
         </div>
 
         <div class="info-item">
-          <span class="icon">🕒</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" class="icon">
           <div>
             <strong>Hours</strong>
             <p>
@@ -87,7 +88,53 @@
 
     </div>
   </main>
+  <script>
+   
+      const form = document.querySelector("form");
 
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = form.querySelector("input[type='text']").value.trim();
+        const email = form.querySelector("input[type='email']").value.trim();
+        const message = form.querySelector("textarea").value.trim();
+
+        if (name === "" || email === "" || message === "") {
+          alert("Please fill in all fields ");
+          return;
+        }
+
+        alert("Thank you " + name + "! Your message has been sent ☕");
+
+        form.reset();
+      });
+
+
+   
+      const cartCount = document.querySelector(".cart-count");
+
+      let count = localStorage.getItem("cartCount") || 0;
+      cartCount.textContent = count;
+
+
+    
+      const subscribeBtn = document.querySelector(".footer-box button");
+      const subscribeInput = document.querySelector(".footer-box input");
+
+      if (subscribeBtn) {
+        subscribeBtn.addEventListener("click", () => {
+          if (subscribeInput.value === "") {
+            alert("Please enter your email 📧");
+          } else {
+            alert("Subscribed successfully ☕");
+            subscribeInput.value = "";
+          }
+        });
+      }
+
+  </script>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
   
@@ -137,7 +184,6 @@
     </p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
